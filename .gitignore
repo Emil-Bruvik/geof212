@@ -3,3 +3,16 @@
 solutions/
 
 Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+# editor / OS cruft
+*~
+.DS_Store
+__pycache__/
+
+# course-internal material (exam solutions, textbook figures, licensed ebook, etc.)
+# not meant for the public student-facing repo
+GEOF212/
