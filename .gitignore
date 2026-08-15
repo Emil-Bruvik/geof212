@@ -16,3 +16,4 @@ __pycache__/
 # course-internal material (exam solutions, textbook figures, licensed ebook, etc.)
 # not meant for the public student-facing repo
 GEOF212/
+cds_requests/
