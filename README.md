@@ -2,10 +2,6 @@
 
 Python materials for the course "physical climatology" at the University of Bergen, Norway.
 
-This is a renovated fork of [edunnsigouin/geof212](https://github.com/edunnsigouin/geof212): the
-original ERA-Interim data directory it depended on has been deleted, so the exercises now read
-from an ERA5-based replacement, and the conda environment has been updated off Python 3.8.
-
 ## Setup
 
 ```
