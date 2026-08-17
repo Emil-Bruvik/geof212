@@ -33,11 +33,3 @@ Exercises 4, 6, 7 and 8 read monthly-mean ERA5 fields from:
 
 Exercise 3 reads CMIP5/NorESM data from `/Data/gfi/share/ModData/CMIP5_ATMOS/atmos/historical/`
 (unchanged).
-
-### `cds_requests/`
-
-Some variables needed by exercises 4, 6 and 8 (clear-sky TOA radiation, evaporation, turbulent
-surface wind stress) aren't in the local ERA5 archive and have to be pulled from the Copernicus
-Climate Data Store. `cds_requests/` has one `cdsapi` request script per exercise; see the
-docstring in each script for one-time setup (installing `cdsapi`, registering a CDS API key,
-accepting the dataset's terms of use).
