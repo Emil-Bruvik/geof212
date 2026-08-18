@@ -1,0 +1,7 @@
+# The Anaconda3 module on cyclone already provides Python, JupyterLab, numpy,
+# matplotlib, xarray, pandas, scipy, ipykernel, etc. -- these two are the only
+# packages it's missing for the exercises. Install with:
+#   module load Anaconda3
+#   pip install --user -r requirements.txt
+cartopy
+netCDF4

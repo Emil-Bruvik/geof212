@@ -4,23 +4,28 @@ Python materials for the course "physical climatology" at the University of Berg
 
 ## Setup
 
+Cyclone provides Anaconda as a shared module — load it instead of installing your own
+Miniconda. It already includes Python, JupyterLab, numpy, matplotlib, xarray, pandas and
+more; `cartopy` and `netCDF4` are the only packages missing, so those get added on top
+with `pip install --user` (installs into your home directory, not the shared module —
+nothing is redundantly re-downloaded):
+
 ```
-conda env create -f environment.yml
-conda activate geof212env
+module load Anaconda3
+pip install --user -r requirements.txt
 jupyter lab
 ```
 
-Launch `jupyter lab` from *inside* the activated `geof212env` environment. Mixing a JupyterLab
-installed in a different (e.g. base) environment with the kernel from `geof212env` is what causes
-the "old Python 3.8 / old JupyterLab" conflicts — `environment.yml` now installs a modern,
-self-contained JupyterLab, so there's no need to reach into another environment for it.
+No `conda create`, `conda activate`, or manual kernel registration needed — the module
+ships a working default kernel, and packages installed with `pip install --user` are
+visible from it automatically.
 
-If your existing `geof212env` predates this update, remove and recreate it rather than updating
-in place:
+If you previously set up a personal `geof212env` conda environment (or your own
+Miniconda) for this course, it's no longer needed and can be removed to free up disk
+space in your home directory:
 
 ```
 conda env remove -n geof212env
-conda env create -f environment.yml
 ```
 
 ## Data
