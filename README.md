@@ -30,10 +30,11 @@ conda env remove -n geof212env
 
 ## Data
 
-Exercises 4, 6, 7 and 8 read monthly-mean ERA5 fields from:
+Exercises 4, 6, 7 and 8 read monthly-mean ERA-Interim-style fields (`year`/`month`/`lat`/`lon`,
+2.5° grid) from:
 
 ```
-/Data/gfi/share/era5/geof212_exercises/
+/Data/gfi/scratch/GEOF212/erai/
 ```
 
 Exercise 3 reads CMIP5/NorESM data from `/Data/gfi/share/ModData/CMIP5_ATMOS/atmos/historical/`
